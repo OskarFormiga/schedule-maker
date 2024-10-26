@@ -5,6 +5,7 @@ import html2canvas from "html2canvas";
 import SettingsModal from './components/SettingsModal';
 import EventModal from './components/EventModal';
 import Header from './components/Header';
+import { getSoftContrastingColor } from './logic/logic';
 
 function App() {
   const [isEventModalOpen, setIsEventModalOpen] = useState(false);
@@ -28,8 +29,8 @@ function App() {
       showColumns: false,
       calendarFont: 'Arial',
       isHeaderVisible: true,
-      columnsTextColor: 'rgb(51, 51, 51)',
-      rowsTextColor: 'rgb(51, 51, 51)',
+      columnsTextColor: getSoftContrastingColor('rgb(187, 187, 187)'),
+      rowsTextColor: getSoftContrastingColor('rgb(187, 187, 187)'),
     }
   });
   const [fonts, setFonts] = useState([]);
@@ -119,8 +120,8 @@ function App() {
       showHours: true,
       calendarFont: 'Arial',
       isHeaderVisible: true,
-      columnsTextColor: 'rgb(51, 51, 51)',
-      rowsTextColor: 'rgb(51, 51, 51)',
+      columnsTextColor: getSoftContrastingColor('rgb(187, 187, 187)'),
+      rowsTextColor: getSoftContrastingColor('rgb(187, 187, 187)'),
     });
 
     window.localStorage.removeItem('events');
