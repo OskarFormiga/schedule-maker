@@ -1,0 +1,175 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    /* Límite máximo de altura del header */
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    /* Asegura que nada crezca fuera del header */
+}
+
+.headerButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 95%;
+    background-color: rgba(248, 248, 255, 0.678);
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.headerButton {
+    background-color: #6c757d;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 0.2vw;
+    transition: background-color 0.5s ease;
+    flex: 1 1 auto;
+    max-width: 200px;
+    /* Límite máximo del ancho del botón */
+    font-weight: 800;
+    color: #212529;
+    text-align: center;
+    height: auto;
+    min-height: 40px;
+    max-height: 50px;
+}
+
+.buttonText {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    line-height: 1.2;
+}
+
+.toggleButton {
+    background-color: rgba(248, 248, 255, 0.678);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    width: 100px;
+    height: 10%;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    color: #212529;
+    max-height: 20px;
+}
+
+.header-container.hidden {
+    transform: translateY(-75%);
+}
+
+/* Modal styles */
+.modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-buttons2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.modal-confirm-button,
+.modal-cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-confirm-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.modal-cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .headerButton {
+        font-size: 0.8rem;
+        min-height: 35px;
+    }
+
+    .buttonText {
+        font-size: 0.7rem;
+    }
+
+    .headerIcon {
+        font-size: 0.7rem;
+    }
+
+    .toggleButton {
+        font-size: 0.6rem;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header {
+        gap: 2px;
+    }
+
+    .headerButton {
+        gap: 5px;
+        width: 70px;
+        min-height: 20px;
+    }
+
+    .toggleButton {
+        font-size: 0.5rem;
+        padding: 4px;
+    }
+
+    .headerIcon {
+        font-size: 0.5rem;
+    }
+
+    .buttonText {
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 150px) {
+
+    .header {
+        gap: 2px;
+        height: 220px;
+    }
+
+}

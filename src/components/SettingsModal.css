@@ -1,0 +1,222 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 80%;
+    /* Cambiado a un porcentaje */
+    max-width: 600px;
+    /* Máximo ancho */
+    max-height: 90vh;
+    /* Máxima altura */
+    overflow-y: auto;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 28px;
+    /* Aumentado */
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #e63946;
+}
+
+.modal-title {
+    font-size: 32px;
+    /* Aumentado */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+
+.input-container,
+.color-input-container,
+.checkbox-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-input,
+.time-input,
+.checkbox-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+}
+
+.time-input {
+    width: 45%;
+    align-items: flex-start;
+}
+
+input[type="time"],
+input[type="text"],
+input[type="checkbox"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    /* Aumentado */
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="time"]:focus,
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button-container {
+    margin-top: 40px;
+}
+
+.modal-button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    /* Aumentado */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.modal-button:hover {
+    background: #0056b3;
+}
+
+/* Estilos del Modal de Advertencia */
+.modal-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-warning {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 90%;
+    /* Cambiado a un porcentaje */
+    max-width: 400px;
+    /* Máximo ancho */
+    text-align: center;
+}
+
+.modal-confirm-button,
+.modal-cancel-button {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+}
+
+.modal-confirm-button:hover,
+.modal-cancel-button:hover {
+    background: #c72c36;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    background-color: red;
+}
+
+.checkboxSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+
+    label {
+        margin: 0
+    }
+}
+
+.modalLabel {
+    font-size: 18px;
+}
+
+.notesSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.titleSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titleColorContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    input[type="text"] {
+        width: 85%;
+    }
+}
+
+.differentTimeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,39 @@
+/* Etiqueta del selector */
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+/* Cambios en hover y focus */
+select:hover {
+    border-color: #888;
+}
+
+select:focus {
+    border-color: #555;
+    background-color: #fff;
+}
+
+/* Selector estilizado */
+select {
+    font-size: 14px;
+    /* Tamaño más pequeño para las opciones */
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    outline: none;
+    color: #333;
+    transition: border 0.3s ease;
+    width: 150px;
+    /* Tamaño reducido */
+}
+
+/* Opciones en el selector */
+option {
+    font-size: 12px;
+    /* Tamaño más pequeño para las opciones */
+    padding: 5px;
+    max-width: 120px;
+}

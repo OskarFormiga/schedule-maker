@@ -1,0 +1,45 @@
+.event {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.event h3 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+}
+
+
+.title-container {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.event .time {
+    font-size: clamp(0.7rem, 0.4vw, 1rem);
+    margin-right: 10px;
+    text-align: right;
+    font-weight: 600;
+    position: relative;
+    height: 30%;
+    width: 100%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
